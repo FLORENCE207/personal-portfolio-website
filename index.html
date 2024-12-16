@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Personal-Portfolio-website</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -27,11 +27,10 @@
 
       html {
         font-size: 62.5%;
-        /* overflow: hidden;   */
+        
       }
       body {
         background: var(--bg-color);
-        /* color: var(--second-bg-color); */
       }
       .header {
         position: fixed;
@@ -186,21 +185,8 @@
       .text-animation span {
         position: relative;
       }
-      .text-animationspan::before {
-        content: "Frontend Developer";
-        color: pink;
-        animation: words 20s infinite;
-      }
-      .text-animationspan::after {
-        content: "";
-        background-color: var(--bg-color);
-        position: absolute;
-        width: calc(100% + 8px);
-        height: 100%;
-        border-left: 3px solid var(--bg-color);
-        right: -8px;
-        animation: cursor 0.6s infinite, typying 20s steps(14) infinite;
-      }
+      
+      
 
       .about {
         display: flex;
@@ -210,7 +196,7 @@
         background: var(--second-bg-color);
         color: white;
       }
-      .abot h2 span {
+      .about h2 span {
         color: pink;
         text-shadow: 0 0 50px pink;
       }
@@ -351,6 +337,7 @@
         cursor: pointer;
         font-style: italic;
       }
+      
 
       .contact {
         background-color: var(--second-bg-color);
@@ -558,6 +545,16 @@
           padding: 20px;
           
         }
+        .about h2, span{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .skills h2{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
     </style>
   </head>
@@ -582,7 +579,7 @@
 
       <div class="home-content">
         <h1>Hello, It's <span>Florence</span></h1>
-        <h3>I am a Frotend Developer</h3>
+        <h3>I am a Frontend Developer</h3>
 
         <div class="social-icons">
           <a href="https://wa.me/message/KGP7BMVECY6YF1"
@@ -608,14 +605,12 @@
     <section class="about" id="about">
       <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2>
-        <h3 class="text-animation">
-          <span></span>
-        </h3>
+        
         <p>
           I am an OND student of Yabatech currently based in Abuja. I'm a
           passionate programmer with a strong interest in web development. I
           enjoy learning new things and look forward to pursuing a career in my
-          chosen field. Iam also interested in fashion and i sell outfits for
+          chosen field. I am also interested in fashion and i sell outfits for
           both male and females.
         </p>
         <a href="#" class="btn">Read More</a>
@@ -685,6 +680,7 @@
             />
           </div>
         </div>
+        <div class="latest">
         <div class="projects-box">
           <div class="projects-info">
             <h4>Project two</h4>
@@ -725,6 +721,11 @@
             />
           </div>
         </div>
+
+        
+        
+        
+      </div>
       </div>
     </section>
 
